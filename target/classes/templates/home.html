@@ -6,6 +6,7 @@
             <p class="card-text" th:text="${ce.movie.desc}">Keine Beschreibung gefunden...</p>
             <p class="card-text" th:text="${ce.time}">Zeit kommt noch</p>
             <p class="card-text">Kino <span th:text="${ce.cinemahall.getNumber}">??</span> (FSK <span th:text="${ce.movie.getFsk}">??</span>), <span th:text="${ce.movie.length}">??</span> Min.</p>
+         <!--<p class="card-text" th:text="${ce.getExternalLink}">https://de.wikipedia.org/wiki/Star_Wars:Episode_I%E2%80%93_Die_dunkle_Bedrohung</p> -->
             <a th:href="@{/setseat(cinemaevent=${ce.getId})}" class="btn btn-primary">Plätze buchen!</a>
         </div>
     </div>
@@ -13,5 +14,12 @@
 <!--
 
     AUFGABE 5
-
+    In Reihe 1 Wird erst mal die Farbe für den Kasten abgefragt, in dem der Film zu sehen sein soll.
+    In Reihe 2-4 werden die Informationen über den Film (m3) und Film-Bild-Link abgefragt
+    Dann wird in in Reihe 5 der Film und der Film Titel mit ce.getMovie.GetTitel abgefragt aus CinemaEventController.java
+    In Reihe 6 wird dann die Beschreibung des Filmes abgefragt, in unserem Beispiel ist dies "Keine Beschreibung gefunden..."
+    In Reihe 7 wird dann das Datum des Filmes unter ce.time abgefragt
+    In Reihe 8 wird dann die Kinosaal Nummer die Fsk des Filmes und die Länge des Filmes abgefragt
+    In Reihe 9 wird dann noch ein Botton erstellt wo man Plätze für den Film Buchen kann.
+    Die Informationen über den Film wurde alles aus ${cinemaEvents} abgerufen
 -->

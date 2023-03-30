@@ -15,7 +15,9 @@ public class CinemaApplication {
 /*
 
 	AUFGABE 1
-	Halloooo
+	
+	Das OOP-Paradigma bedeutet, die Objekt Orientierte Programmierung.
+	Das heißt einfach nur das sich das Objekt möglichst an der Realität wieder spiegelt und man logisch denkt/objekte erstellt.
 
 
 

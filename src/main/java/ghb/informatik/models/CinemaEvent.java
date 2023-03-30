@@ -11,6 +11,11 @@ public class CinemaEvent {
     /*   
         AUFGABE 2
 
+        In der For-Schleife steht i und k für die Länge und Breite der Sitze.
+        Hier wird einfach nur die Länge und Breite der Sitze abgefragt.
+        In der ersten For-Schleife wird i abgefragt und in der Zweiten wird k abgefragt.
+        Ganz unten in der For-Schleife wird ein neuer Sitz erstellt, dieser wird mit dem Status: False erstellt, welches den Sitz auf Frei ändert.
+
 
     */
     public CinemaEvent(int id, Movie movie, CinemaHall cinemahall, String time){
